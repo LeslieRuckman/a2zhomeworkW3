@@ -6,11 +6,6 @@ var loadedJSON;
 var fortuneData;
 var fortunes = [];
 var words = [];
-var randomNounURL = "https://api.wordnik.com/v4/words.json/randomWord?" +
-                    "&excludePartOfSpeech=proper-noun,proper-noun-plural,proper-noun-posessive,suffix,family-name,idiom,affix&" +
-                    "&includePartOfSpeech=noun" +
-                    "&minLength=5&maxLength=-1" +
-                    "&api_key=48dd829661f515d5abc0d03197a00582e888cc7da2484d5c7";
 
 // function preLoad() {
 // //load the fortune cookie JSON from the API here.
@@ -97,8 +92,10 @@ function remixFortune(){
   this.replacer = function(match){
     var len = match.length;
     if(len == 4){
-      return "fast";
+      return "sick";
     } else if (len == 5)
     return "sugar";
-  }
+  }else if (len == 6)
+  return "election";
+}
 }
