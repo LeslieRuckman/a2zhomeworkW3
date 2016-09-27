@@ -89,13 +89,15 @@ function remixFortune(){
   forDiv.style('border-color:#c3e2c0');
   forDiv.style('border-width:2px;');
 
-  this.replacer = function(match){
-    var len = match.length;
-    if(len == 4){
-      return "sick";
-    } else if (len == 5)
-    return "sugar";
-  }else if (len == 6)
-  return "election";
-}
+this.replacer = function(match) {
+        var len = match.length;
+        if (len == 4) {
+            return "sick";
+        } else if (len == 5) {
+            return "sugar";
+        } else if (len == 6) {
+            return "election";
+        }
+
+    }
 }
